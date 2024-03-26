@@ -6,12 +6,12 @@ pipeline {
   }
 
   environment {
-    GO111MODULES = on
+    GO111MODULES = 'on'
   }
   
   stages {
     stage('Build') {
-      sh go build
+      sh 'go build'
     }
   }
 }
